@@ -1,0 +1,19 @@
+
+<%unless @featured_posts.first_page? %>
+<div class="left prev_img " href = "<%featured_posts_path(:page=>@featured_posts.current_page-1) %>">
+</div>
+<%end %>
+<%unless @featured_posts.last_page? %>
+<div class="right next_img dialogconfirm" href = "<%featured_posts_path(:page=>@featured_posts.current_page+1) %>">
+</div>
+<%end %> 
+
+</div>
+<div>
+
+  <% post = @featured_posts.first %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.cover_image.thumb("200x320").url %></td>
+  </tr>
+</div>

@@ -1,0 +1,2 @@
+.next_img{ background-image:url(../assets/uimgs/icon_next.png); background-repeat:no-repeat; height:30px; width:30px;  position:absolute; bottom:1px; right:6px;}
+.prev_img{ background-image:url(../assets/uimgs/icon_prev.png); background-repeat:no-repeat; height:30px; width:30px;  position:absolute; bottom:1px; left:6px; }
